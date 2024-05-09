@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    <form>
+        <table align="center" >
+            <tr align="center">
+                <td>
+                    <caption>Student Form</caption>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label>Username:</label>
+                    <input type="text" name="name"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Password:</label>
+                    <input type="password" name="password"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Email id:</label>
+                    <input type="email" name="email" placeholder="eg:abc@gmail.com"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Date:</label>
+                    <input type="date" name="date"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Subjects:</label>
+                    <input type="checkbox" name="subject"/>Eng
+                    <input type="checkbox" name="subject"/>Hin
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Gender:</label>
+
+                    <label for="101">
+                        <input type="radio" value="m" name="gender" id="101"/>Male
+                    </label>
+
+                    <label for="102">
+                        <input type="radio" value="f" name="gender" id="102"/>Female
+
+                    </label>
+
+                    <!--'label for' is used to click on the button while hovering on the text itself and no need to go close to button-->
+
+                </td>
+            </tr>
+
+            <!--The value gets stored in backend as -
+                 if we click on Male button it gets stored as name=m and not name=Male
+                Male word is only visible to us, value gets stored in backend
+
+                same name is used so we can store only one value value in the variable name and not many options.
+            -->
+
+            <tr>
+                <td>
+                    <label>State:</label>
+                    <select name="state">
+                        <option>Select state</option>
+                        <option>Jharkhand</option>
+                        <option>Odisha</option>
+                        <option>Goa</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Comments</label>
+                    <textarea row="1" cols="20" placeholder="Comment here"></textarea>
+                </td>
+            </tr>
+
+            <!--<tr>
+                <td colspan="2" align="center">
+                    <input type ="submit" value="Login"/>
+                </td>
+        
+            </tr>-->
+
+            <tr>
+                <td align="center">
+                    <button>Login</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
